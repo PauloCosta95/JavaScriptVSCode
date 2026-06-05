@@ -58,3 +58,10 @@ function mensagem(){
 
 let reto = mensagem();
 console.log(reto);
+
+
+let valores = [1, 3.4, true, somar];
+
+for (let i = 0; i < valores.length; i++) {
+    console.log(typeof valores[i]);
+}
