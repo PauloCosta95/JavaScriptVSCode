@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seção 04 - Aula 12</title>
+</head>
+<body>
+  <h1>Seção 04 - Aula 12</h1>
+
+  <script>
+    var cliente = {
+      nome: "Maria das Graças Xuxa Meneguel",
+      email: "xuxa@666.com",
+      telefone: "4002-8922",
+      rua: "Rua dos Baixinhos",
+      numero: 171,
+      cidade: "São Paulo",
+      bairro: "Pinheiros",
+      uf:"SP"
+    };
+
+    // 1. função para receber dados de um cliente e retornar uma string formatada com as informações desse
+    function formatarCliente(cliente) {
+      return `${cliente.nome}, email: ${cliente.email}, telefone: ${cliente.telefone}, endereço: ${cliente.rua}, ${cliente.numero}, ${cliente.bairro}, ${cliente.cidade} - ${cliente.uf}`;
+    }
+
+    console.log(formatarCliente(cliente));
+
+    // 2. Crie uma função que receba dois valores inteiros como parâmetro e exiba todos os números ímpares entre estes dois número (sem incluí-los).
+    function showImpar(num1, num2) {
+      for (let i = num1 + 1; i < num2; i++) {
+        if (i % 2 !== 0) {
+          console.log("Número ímpar: ", i);
+        }
+      }
+    }
+
+    showImpar(1, 10);
+
+    /*3.Crie uma função que receba um valor em anos de experiência de um funcionário e retorne o nível de
+        experiência deste conforme:
+            De 0 a 2 anos: Júnior
+            De 3 a 5 anos: Pleno
+            De 6 acima: Senior
+    */
+
+    function nivelExperiencia(anos) {
+      if (anos >= 0 && anos <= 2) {
+        return "Júnior";
+      } else if (anos >= 3 && anos <= 5) {
+        return "Pleno";
+      } else if (anos >= 6) {
+        return "Sênior";
+      } else {
+        return "Valor inválido de anos de experiência.";
+      }
+    }
+
+    console.log("Nível de experiência para 1 ano: ", nivelExperiencia(1));
+    console.log("Nível de experiência para 4 anos: ", nivelExperiencia(4));
+    console.log("Nível de experiência para 7 anos: ", nivelExperiencia(7));
+    console.log("Nível de experiência para -1 ano: ", nivelExperiencia(-1));
+
+  </script>
+</body>
+</html>

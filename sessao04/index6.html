@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seção 04 - Aula 06</title>
+</head>
+<body>
+  <h1>Seção 04 - Aula 06</h1>
+
+  <script>
+    // Operadores Logicos
+    var curso = 'JavaScript';
+    var legal = true;
+
+    // AND (&&) (e = ambas as condições devem ser verdadeiras)
+    if(curso === 'JavaScript' && legal === true) {
+      console.log("Estou aprendendo JavaScript e estou achando legal!");
+    }else {
+      console.log("Ou não estou aprendendo JavaScript ou não estou achando legal.");
+    }
+
+    // OR (||) (ou = uma das condições deve ser verdadeira)
+    if(curso === 'JavaScript' || legal === true) {
+      console.log("Estou aprendendo JavaScript ou estou achando legal!");
+    }else {
+      console.log("Não estou aprendendo JavaScript e não estou achando legal.");
+    }
+
+    // NOT (!) (não = inverte o valor lógico)
+    if(!legal) {
+      console.log("Não estou achando legal.");
+    }else {
+      console.log("Estou achando legal.");
+    }
+
+    if(curso !== 'JavaScript') {
+      console.log("Não estou aprendendo JavaScript.");
+    }else {
+      console.log("Estou aprendendo JavaScript.");
+    }
+
+  </script>
+</body>
+</html>

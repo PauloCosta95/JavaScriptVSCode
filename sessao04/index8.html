@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seção 04 - Aula 08</title>
+</head>
+<body>
+  <h1>Seção 04 - Aula 08</h1>
+
+  <script>
+    // Operadores aritméticos
+
+    /*
+      - adição (+)
+      - subtração (-)
+      - multiplicação (*)
+      - divisão (/)
+      - módulo (%)
+      - incremento (++)
+      - decremento (--)
+
+      // Operadores aritméticos abreviados
+      - adição abreviada (+=)
+      - subtração abreviada (-=)
+      - multiplicação abreviada (*=)
+      - divisão abreviada (/=)
+    */
+
+    console.log("Operadores Aritméticos: 7/0 =", 7/0); // divisão por zero retorna Infinity
+
+    console.log("42" / 2); // divisão com string numérica retorna número 21
+
+    console.log("Geek" * 3); // multiplicação com string não numérica retorna NaN
+
+    console.log(0.1 + 0.7); // problema de precisão com números de ponto flutuante 0.7999999999999999
+
+    var n = 42;
+    console.log("Valor de n:", n); // 42
+    console.log(n.toString()); // converte número para string "42"
+
+    console.log((13.356546345123).toFixed(2)); // limita casas decimais para 2: "13.36"
+
+    console.log("Valor de PI:", Math.PI); // valor de PI
+
+    console.log("Raiz quadrada de 64:", Math.sqrt(64)); // raiz quadrada de 64
+
+    console.log("2 elevado a 10:", Math.pow(2, 10)); // 2 elevado a 10
+
+    console.log(typeof(42)); // tipo number
+    console.log(typeof("Geek")); // tipo string
+
+    console.log(Number.isInteger(42)); // verifica se é inteiro: true
+    console.log(Number.isInteger(42.5)); // verifica se é inteiro: false
+
+    // Conversão binária, octal e hexadecimal
+    console.log("Valor binário de 42:", (42).toString(2)); // binário
+    console.log("Valor octal de 42:", (42).toString(8)); // octal
+    console.log("Valor hexadecimal de 42:", (42).toString(16)); // hexadecimal
+
+  </script>
+</body>
+</html>

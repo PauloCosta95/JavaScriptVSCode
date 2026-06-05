@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seção 04 - Aula 12</title>
+</head>
+<body>
+  <h1>Seção 04 - Aula 12</h1>
+
+  <script>
+    /*---- Escopo de variaveis ----*/
+
+    function somar(num1, num2) {
+      var valor = 5; // variável local
+      var resultado = num1 + num2 + valor;
+      console.log("Resultado da soma dentro da função: ", resultado);
+      return resultado;
+    }
+
+    console.log("Resultado da soma fora da função: ", somar(10, 20));
+    // console.log(valor); // isso causaria um erro, pois 'valor' é uma variável local e não está acessível fora da função
+
+    // console.log("valor", valor); // isso causaria um erro, pois 'valor' é uma variável local e não está acessível fora da função
+
+    for (var i = 0; i < 3; i++) {
+      console.log("Dentro do loop: ", i);
+      var outra = 5; // variável declarada com var dentro do loop
+      console.log("Outra dentro do loop: ", i * outra);
+    }
+
+    console.log("outra fora do loop: ", outra); // variável 'outra' está acessível aqui, pois foi declarada com var
+    console.log("i fora do loop: ", i); // variável 'i' está acessível aqui, pois foi declarada com var
+
+
+    for (var j = 0; j < 5; j++) {
+      console.log("Dentro do loop com let: ", j);
+      let diferente = 12; // variável declarada com let dentro do loop, o let torna essa variável de escopo local ao bloco
+      console.log("Diferente dentro do loop: ", j * diferente);
+    }
+
+    console.log("j fora do loop: ", j); // variável 'j' está acessível aqui, pois foi declarada com var
+    // console.log("diferente fora do loop: ", diferente); // isso causaria um erro, pois 'diferente' foi declarada com let e não está acessível fora do loop
+
+
+
+  </script>
+</body>
+</html>
