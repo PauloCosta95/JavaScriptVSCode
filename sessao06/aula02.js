@@ -54,4 +54,7 @@ function mensagem(){
     console.log("Olá, sou uma função de primeira classe!");
 }
 
-mensagem();
+
+
+let reto = mensagem();
+console.log(reto);
